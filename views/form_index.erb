@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <title>Submit Article</title>
+  </head>
+
+  <body>
+    <h2>Add Your Own Article, ya doofus</h2>
+    <br><br>
+
+    <form action="/articles" method="post">
+      New Article Title: <br> <br>
+      <input type="text" name="title" required> <br> <br>
+      URL: <br> <br>
+      <input type="url" pattern="https?://.+" name="url" required> <br> <br>
+      Description: <br> <br>
+      <input type="text" name="description" min="20" required> <br> <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fun Articles That Are Fun</title>
+  </head>
+
+  <body>
+    <h2>Fun Articles That Are Fun</h2>
+
+    <ul>
+      <% articles.each do |article| %>
+        <li><a href="<%=article.url%>"><%= article.title %></a> (<%= article.url %>)<br><%= article.description %></li>
+      <% end %>
+    </ul>
+
+    <a href="http://localhost:4567/articles/new">Submit an article</a>
+  </body>
+</html>
